@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header></Header>
-    <div>Content</div>
+    <Featured></Featured>
     <Footer></Footer>
   </div>
 </template>
@@ -9,11 +9,13 @@
 <script>
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Featured from "./Featured Products/featured";
 export default {
   name: "app",
   components: {
     Header,
-    Footer
+    Footer,
+    Featured
   }
 };
 </script>
@@ -37,38 +39,6 @@ body {
   clear: both;
 }
 
-/*SLIDER*/
-
-.slider_bck {
-  height: 850px;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-}
-
-.slider-container {
-  display: flex;
-}
-
-.slider-container .text {
-  font-family: "Monoton";
-  color: #fff;
-  font-size: 120px;
-  line-height: 150px;
-  width: 690px;
-  margin-top: 210px;
-}
-
-.slider-container .image {
-  flex-grow: 1;
-  width: 370px;
-  text-align: center;
-}
-
-.slider-container .image img {
-  width: 410px;
-  margin-top: 244px;
-}
-
 /* MENU */
 
 .menu_container .top {
@@ -78,7 +48,6 @@ body {
 .menu_container .top h2 {
   text-align: center;
   font-size: 50px;
-  font-family: "Arizonia", cursive;
   color: #c10a28;
   border-bottom: 1px solid #d4d4d4;
   line-height: 90px;
@@ -168,5 +137,9 @@ body {
   margin: 20px 0px;
   color: #2196f3;
   font-size: 20px;
+}
+
+.VueCarousel-dot-container {
+  margin-top: -15px !important;
 }
 </style>

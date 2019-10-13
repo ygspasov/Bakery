@@ -2,11 +2,12 @@
   <header>
     <div class="container">
       <div class="logo">
-        <img :src="Logo" alt />
+        <img :src="Logo" />
       </div>
       <div class="nav">
-        <img :src="Menu" alt />
+        <img :src="Menu" @click="showPanel=!showPanel" />
       </div>
+      <md-drawer :md-active.sync="showPanel" :md-right="true" />
     </div>
   </header>
 </template>
@@ -19,7 +20,8 @@ export default {
   data() {
     return {
       Logo,
-      Menu
+      Menu,
+      showPanel: false
     };
   }
 };
@@ -28,7 +30,7 @@ export default {
 <style scoped>
 header {
   background: #703901;
-  padding: 30px 0px 10px 0px;
+  padding: 20px;
 }
 
 header .nav img {
@@ -43,7 +45,7 @@ header .side-drawer {
 header .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .nav {
