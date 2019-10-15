@@ -2,6 +2,7 @@
   <div id="app">
     <Header></Header>
     <Featured></Featured>
+    <Menu></Menu>
     <Footer></Footer>
   </div>
 </template>
@@ -9,13 +10,15 @@
 <script>
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Featured from "./Featured Products/featured";
+import Featured from "./components/Featured";
+import Menu from "./components/Menu";
 export default {
   name: "app",
   components: {
     Header,
     Footer,
-    Featured
+    Featured,
+    Menu
   }
 };
 </script>
@@ -48,7 +51,7 @@ body {
 .menu_container .top h2 {
   text-align: center;
   font-size: 50px;
-  color: #c10a28;
+  color: #703901;
   border-bottom: 1px solid #d4d4d4;
   line-height: 90px;
   margin: 0px 0px;

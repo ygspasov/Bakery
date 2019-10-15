@@ -73,7 +73,7 @@ div {
 .slider-container .text {
   font-family: "Mansalva", sans-serif;
   color: #fff;
-  font-size: 120px;
+  font-size: 100px;
   line-height: 150px;
   width: 690px;
   margin-top: 210px;
