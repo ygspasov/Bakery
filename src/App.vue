@@ -42,8 +42,6 @@ body {
   clear: both;
 }
 
-/* MENU */
-
 .menu_container .top {
   margin-top: 80px;
 }
@@ -62,8 +60,6 @@ body {
   border-bottom: 1px solid #d4d4d4;
   margin-bottom: 40px;
 }
-
-/* MENU */
 
 .call_us_container {
   background: #c10a28;
@@ -96,8 +92,6 @@ body {
 .call_us_container .third span:first-child {
   color: #171717;
 }
-
-/* MENU */
 
 .newsl_container h2 {
   font-size: 28px;
