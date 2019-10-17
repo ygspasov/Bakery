@@ -10,7 +10,7 @@
     "-LEmaPHWXzdUZ_5ohJPa": {
       "desc": "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ",
       "img": "farmer's bread.jpg",
-      "name": "farmer's bread",
+      "name": "Farmer's bread",
       "price": 23,
       "type": "bread"
     },
@@ -73,7 +73,7 @@
     "-LEpouW8C-umWENbq350": {
       "desc": "Voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
       "img": "cookie-biscuits-round.jpg",
-      "name": "Cookie biscuits round.jpg",
+      "name": "Cookie biscuits round",
       "price": 25,
       "type": "cookies"
     },
@@ -94,7 +94,7 @@
     "-LGlOfQBsBPKdqgYLiLJ": {
       "desc": "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ",
       "img": "baked-rolls.jpg",
-      "name": "Baked rolls.jpg",
+      "name": "Baked rolls",
       "price": 5.2,
       "type": "rolls"
     },
@@ -136,7 +136,7 @@
     "-LEmaPHWXzdUZ_5ohJPw": {
       "desc": "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ",
       "img": "cupcake-muffins.jpg",
-      "name": "cupcake muffins",
+      "name": "Cupcake muffins",
       "price": 5.1,
       "type": "muffins"
     },

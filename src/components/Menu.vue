@@ -2,9 +2,9 @@
   <div>
     <div class="container menu_container">
       <div class="top">
-        <h2>Menu</h2>
+        <h2 v-scroll-reveal.reset>Menu</h2>
       </div>
-      <div class="buttons">
+      <div class="buttons" v-scroll-reveal.reset>
         <md-button
           v-for="(button,index) in buttons"
           :key="index"
@@ -12,12 +12,19 @@
           @click="changeButtonClass(button.name)"
         >{{button.name}}</md-button>
       </div>
-      <div class="products-items">
-        <md-card v-for="(product,i) in products" :key="i">
-          {{product}}
-          <md-card-media md-ratio="4:3">
+      <div class="products-items" v-scroll-reveal.reset="{ delay: 500 }">
+        <md-card v-show="product.type===chosenProduct" v-for="(product,i) in products" :key="i">
+          <md-card-header>
+            <p class="md-title">{{product.name}}</p>
+            <h3>
+              <strong>${{product.price}}</strong>
+            </h3>
+          </md-card-header>
+          <md-card-media md-ratio="16/9">
             <img :src="require(`../assets/images/products/${product.img}`)" />
           </md-card-media>
+
+          <md-card-content>{{product.desc}}</md-card-content>
         </md-card>
       </div>
     </div>
@@ -34,6 +41,7 @@ export default {
         { name: "rolls", active: false },
         { name: "muffins", active: false }
       ],
+      chosenProduct: "bread",
       products: []
     };
   },
@@ -42,6 +50,7 @@ export default {
       this.buttons.forEach(button => {
         button.name == name ? (button.active = true) : (button.active = false);
       });
+      this.chosenProduct = name;
     }
   },
   created() {
@@ -57,7 +66,6 @@ export default {
           });
         }
         this.products = list;
-        console.log(this.products);
       });
   }
 };
@@ -77,5 +85,8 @@ export default {
   width: 32%;
   padding: 10px;
   margin-bottom: 10px;
+}
+.md-card .md-card-header {
+  padding-top: 0px;
 }
 </style>
