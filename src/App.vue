@@ -3,6 +3,7 @@
     <Header></Header>
     <Featured></Featured>
     <Menu></Menu>
+    <ContactUs></ContactUs>
     <Footer></Footer>
   </div>
 </template>
@@ -12,13 +13,15 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Featured from "./components/Featured";
 import Menu from "./components/Menu";
+import ContactUs from "./components/ContactUs/ContactUs";
 export default {
   name: "app",
   components: {
     Header,
     Footer,
     Featured,
-    Menu
+    Menu,
+    ContactUs
   }
 };
 </script>
@@ -59,38 +62,6 @@ body {
   text-align: center;
   border-bottom: 1px solid #d4d4d4;
   margin-bottom: 40px;
-}
-
-.call_us_container {
-  background: #c10a28;
-  text-align: center;
-  margin: 110px 0px;
-  padding: 40px 0px 70px 0px;
-}
-
-.call_us_container .first {
-  padding: 20px 0px;
-}
-.call_us_container .first h1 {
-  font-size: 80px;
-  margin: 0px;
-  line-height: 150px;
-  color: #fff;
-}
-
-.call_us_container .second {
-  height: 200px;
-}
-
-.call_us_container .third {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 150px;
-  color: #fff;
-}
-
-.call_us_container .third span:first-child {
-  color: #171717;
 }
 
 .newsl_container h2 {

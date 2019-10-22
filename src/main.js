@@ -21,7 +21,7 @@ Vue.use(MdDrawer);
 Vue.use(VueCarousel);
 Vue.use(MdCard);
 Vue.use(VueScrollReveal, {
-  class: "v-scroll-reveal", // A CSS class applied to elements with the v-scroll-reveal directive; useful for animation overrides.
+  class: "v-scroll-reveal",
   duration: 800,
   scale: 1,
   distance: "60px",
