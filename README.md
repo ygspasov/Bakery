@@ -1,29 +1,5 @@
-# bakery
+# Bakery app
 
-## Project setup
-```
-npm install
-```
+A VueJS application for setting up a bakery shop. It uses Firebase to store data for the different categories of products on sale, has a slider to present the most popular items on sale with information on available discounts, has a newsletter signup form that validates user input and saves emails in the database. The app also features cool VueJS animations with different items appearing on the screen as you scroll down the page.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![alt text](screenshots/bakery.jpg "Bakery app")

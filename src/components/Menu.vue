@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container menu_container">
+    <div class="container menu-container">
       <div class="top">
         <h2 v-scroll-reveal.reset>Menu</h2>
       </div>
@@ -72,7 +72,7 @@ export default {
 </script>
 
 <style scoped>
-.menu_container .top h2 {
+.menu-container .top h2 {
   font-family: "Mansava", sans-serif;
 }
 
@@ -88,5 +88,13 @@ export default {
 }
 .md-card .md-card-header {
   padding-top: 0px;
+}
+
+.top {
+  text-align: center;
+}
+.buttons.v-scroll-reveal {
+  text-align: center;
+  margin-bottom: 10px;
 }
 </style>
